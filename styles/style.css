@@ -1,0 +1,47 @@
+body{
+    background-image: url(../images/painteds-wood-planks-large-background.jpg);
+    background-repeat: repeat;
+}
+        
+.body-content{
+    background-image: url(../images/subtles-mosaic-pattern.png);
+    border-style: solid;
+    border-radius: 50px 50px 50px 50px;
+    border-color: bisque;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px; 
+    clear: right;
+    font-family: Arial,Tahoma;
+}
+
+.about-user{
+    float: right;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color:yellowgreen;
+}
+
+.block-image{ 
+    border-style: groove;
+    border-radius: 50px 50px 50px 50px;
+}
+
+address{
+    color:crimson;
+}
+
+.header-title{
+    border-style: groove;
+    border-radius: 30px 30px 30px 30px;
+    margin: auto auto;
+    padding-top: 0px;
+    text-align: center;
+    word-spacing: 2px;
+    height: auto;
+    width: auto; 
+}
+
