@@ -1,47 +1,93 @@
-body{
-    background-image: url(../images/painteds-wood-planks-large-background.jpg);
-    background-repeat: repeat;
-}
-        
-.body-content{
-    background-image: url(../images/subtles-mosaic-pattern.png);
-    border-style: solid;
-    border-radius: 50px 50px 50px 50px;
-    border-color: bisque;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 15px; 
-    clear: right;
-    font-family: Arial,Tahoma;
+body {
+background-color: white;
 }
 
-.about-user{
-    float: right;
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    font-weight: 600;
-    color:yellowgreen;
+#main {
+height: 1700px;
+width: 1000px;
+margin: auto auto;
+border-style: inherit;
+border: 1px solid black;
+clear: left;
 }
 
-.block-image{ 
-    border-style: groove;
-    border-radius: 50px 50px 50px 50px;
+#lviv {
+padding: 15px 15px 15px 15px;
+border: 1px solid white;
+margin: 10px 10px 10px 10px;
+box-shadow: 0.1px 1px 4px black;
 }
 
-address{
-    color:crimson;
+#kruivka {
+border: 1px solid white;
+margin: 10px 10px 15px 10px;
+box-shadow: 0.1px 1px 4px black;
+width: 790 px;;
+height: 250px;
 }
 
-.header-title{
-    border-style: groove;
-    border-radius: 30px 30px 30px 30px;
-    margin: auto auto;
-    padding-top: 0px;
-    text-align: center;
-    word-spacing: 2px;
-    height: auto;
-    width: auto; 
+#legend-house {
+border: 1px solid white;
+margin-top: 5px;
+margin-left: 10px;
+box-shadow: 0.0px 1px 4px black;
+width: 480px;
+height: 380px;
+float: left;
+margin-bottom: 15px;
+}
+
+#castle {
+border: 1px solid white;
+margin-right: 5px;
+margin-top: 5px;
+box-shadow: 0.1px 1px 4px black;
+width: 495px;
+height: 380px;
+float: left;
+margin-bottom: 15px;
+}
+
+#rakovets {
+border: 1px solid white;
+margin: 10px 10px 10px 10px;
+box-shadow: 0.1px 1px 4px black;
+width: 790 px;;
+height: 250px;
+clear:both;
+}
+
+header {
+margin: auto auto;
+padding-top: 0px;
+text-align: center;
+word-spacing: 2px;
+height: auto;
+width: auto; 
+} 
+
+section {
+font-family: Arial,Tahoma;
+color:grey;
+}
+
+img {
+margin: 10px 10px 10px 10px;
+} 
+
+aside {
+padding: 10px;
+width: 550px;
+float: right;
+}
+
+article {
+margin-right: 240px;
+display: block;
+}
+
+p {
+margin-top: 1px;
+margin-left: 10px;
 }
 
