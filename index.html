@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script src="1.js"></script>
+	<script src="geolocation.js"></script>
     <title>Like places</title>
   </head>
   <body>
@@ -15,18 +15,18 @@
       <div id = "lviv">
         <img src="images/wall2.jpg " width="920px">
       </div>
-      <div id = "kruivka" data-latitude = "49.841293" data-longitude = "24.03227" onclick="goToPage()";>
+      <div id = "kruivka" id = "coordinate" data-latitude = "49.841293" data-longitude = "24.03227" onclick="GoToPage.goToUrl('kruivka','coordinate')">
         <img src="images/Kryivka.jpg" height="230px">
         <aside>
-          <section>
+          <section> 
             <p>
               <span class = "place-name">«Криї́вка»</span> — ресторан-кнайпа у Львові. Відкритий у вересні 2007 р. Заклад оздоблений у вигляді польової криївки УПА, знаходиться у підвалі одного з будинків за адресою площа Ринок, 14 (Кам'яниця Венеційська). Кухня — українська, польова. Страви подають у військовому посуді. У ресторані є такі атракції, як тир та вільне користування зброєю. Традиція входу до закладу передбачає знання гасла-пароля Слава Україні - Героям слава, не назвавши який не можна потрапити всередину та перевірку чаркою медовухи для тих, хто старший 21 року.
-              <a href="#" id = "You_link">
+              <a href="#" >
             <p>Показати на карті</p></a></p>
           </section>
         </aside>
       </div>
-      <div id = "legend-house" data-city = "Lviv" data-street = "Staroyevreyska" data-street-number = "48" data-zip-code = "79000" onclick="GeoLocation.getAdress(this)";>
+      <div id = "legend-house" id = "adress" data-city = "Lviv" data-street = "Staroyevreyska" data-street-number = "48" data-zip-code = "79000" onclick="GoToPage.goToUrl('legend-house','adress')">
         <img src="images/legendHouse.jpg" height="250px" width = 450px>
         <section>
           <p><span class = "place-name">Дім Легенд</span><br>Кнайпа, лише в твоїй уяві. Будинок сажотруса <br>та його сім'ї,
@@ -34,16 +34,16 @@
           </p>
         </section>
       </div>
-      <div id = "castle" data-latitude = "49.848299" data-longitude = "24.039149" onclick="GeoLocation.getCoordinats(this)";>
+      <div id = "castle" id = "coordinate" data-latitude = "49.848299" data-longitude = "24.039149" onclick="GoToPage.goToUrl('castle','coordinate')";>
         <img src="images/vkastle.jpg" height="250px" width = 450px>
         <section>
           <p>
             <span class = "place-name">Висо́кий За́мок</span> (пол. Wysoki Zamek) — замок, збудований під керівництвом Галицько-Волинського князя Лева Даниловича.<br><br>
           </p>
-          <p><a href = "javascript:window.goToPage()">Показати на карті</a></p>
+          <p><a href="#">Показати на карті</a></p>
         </section>
       </div>
-      <div id = "rakovets" data-latitude = "49.64451296" data-longitude = "24.02638614" onclick="GeoLocation.getCoordinats(this)">
+      <div id = "rakovets" id = "coordinate" data-latitude = "49.64451296" data-longitude = "24.02638614" onclick="GoToPage.goToUrl('rakovets','coordinate')">
         <img src="images/rakovet.jpg" height="230px">
         <aside>
           <section>
@@ -54,8 +54,6 @@
           </section>
         </aside>
       </div>
-      
     </div>
-    
   </body>
 </html>
