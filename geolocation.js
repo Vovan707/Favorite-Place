@@ -2,7 +2,9 @@ var GeoLocation = {
   getAdress: function(atr) {
     var city = document.getElementById(atr).getAttribute('data-city'),
       street = document.getElementById(atr).getAttribute('data-street'),
-      adress = city + " " + street
+	  streetNumber = document.getElementById(atr).getAttribute('data-street'),
+	  zipCode = document.getElementById(atr).getAttribute('data-zip-code'),
+      adress = city + " " + street+" "+streetNumber+" "+zipCode
     return adress
   },
   getCoordinats: function(atr) {
