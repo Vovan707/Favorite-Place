@@ -1,13 +1,13 @@
 var GeoLocation = {
-  getCoordinates: function(atr) {
+    getCoordinates: function(atr) {
     var id = document.getElementById(atr);
-    if (id.hasAttribute("data-latitude")) {
+    if (id.hasAttribute("data-latitude")||id.hasAttribute("data-longitude")) {
         latitude = document.getElementById(atr).getAttribute('data-latitude'),
         longitude = document.getElementById(atr).getAttribute('data-longitude'),
         coordinats = latitude + "," + longitude;
-      return coordinats;
+    return coordinats;
     } else {
-    var city = document.getElementById(atr).getAttribute('data-city'),
+      var city = document.getElementById(atr).getAttribute('data-city'),
         street = document.getElementById(atr).getAttribute('data-street'),
         streetNumber = document.getElementById(atr).getAttribute('data-street-number'),
         zipCode = document.getElementById(atr).getAttribute('data-zip-code'),
@@ -17,7 +17,11 @@ var GeoLocation = {
   }
 }
 var Maps = {
+  createURL : function(atr){
+	  url = "http://maps.google.com?q=" + GeoLocation.getCoordinates(atr)
+	  return url;
+  },
   goToUrl: function(atr) {
-    window.open("http://maps.google.com?q=" + GeoLocation.getCoordinates(atr));
+    window.open(Maps.createURL(atr));
   }
 }
